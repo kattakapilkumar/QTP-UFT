@@ -1,0 +1,29 @@
+To use objects in VBScript, you first need to create an instance of an object and store its reference in a VBScript variable.
+
+Syntax :
+========
+In order to work with objects seamlessly, we need to declare the object and instantiate it using Set Keyword.
+
+
+Dim objectname    ''''' Declare the object name.
+Set objectname = CreateObject(object_type)
+
+
+
+
+
+Destroying the Objects :
+========================
+The significance of destroying the Object is to free the memory and reset the object variable.
+
+Syntax
+In order to destroy the objects, we need to use Set Keyword followed by the object name and point it to Nothing.
+
+Set objectname = Nothing 'Destroy the object.
+Example
+In the below example, we are creating an object of type Scripting.Dictionary.
+
+Dim obj  
+Set obj = CreateObject("Scripting.Dictionary")
+Set obj = Nothing.
+
